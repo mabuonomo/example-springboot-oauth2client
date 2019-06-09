@@ -11,6 +11,9 @@ public class WebController {
  
     @RequestMapping("/securedPage")
     public String securedPage(Model model, Principal principal) {
+        System.out.println("prova");
+        System.out.println(model);
+        System.out.println(principal);
         return "securedPage";
     }
  
